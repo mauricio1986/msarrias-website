@@ -320,6 +320,9 @@
   - Health economics
   - Transportation
   - Random parameters
+  links:
+  - text: DOI
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1111/pirs.12416
   
 - id: we-do-not-have-the-same-tastes-evaluating-individual-heterogeneity-in-the-preferences-for-amenities
   title: We Do Not Have the Same Tastes! Evaluating Individual Heterogeneity in the Preferences for Amenities
@@ -333,6 +336,9 @@
   - Regional economics
   - Random parameters
   - Mixed logit
+  links:
+  - text: DOI
+    url: https://link.springer.com/article/10.1007/s10902-019-00081-2
   
 - id: do-monetary-subjective-well-being-evaluations-vary-across-space-comparing-continuous-and-discrete-spatial-heterogeneity
   title: Do monetary subjective well-being evaluations vary across space? Comparing continuous and discrete spatial heterogeneity
@@ -375,6 +381,9 @@
   description: Published article in Letters in Spatial and Resource Sciences.
   categories:
   - Regional economics
+  links:
+  - text: DOI
+    url: https://link.springer.com/article/10.1007/s12076-018-0217-2
   
 - id: are-consumers-willing-to-pay-to-let-cars-drive-for-them-analyzing-response-to-autonomous-vehicles
   title: Are consumers willing to pay to let cars drive for them? Analyzing response to autonomous vehicles
@@ -391,6 +400,7 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.trc.2017.03.003
+    
 - id: convergence-to-the-managerial-frontier
   title: Convergence to the managerial frontier
   authors: William F. Maloney and Mauricio Sarrias
