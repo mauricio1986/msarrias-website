@@ -71,7 +71,6 @@
     - "Spatial econometrics"
     - "Environmental economics"
     - "Health economics"
-    - "Air pollution"
   articles:
     - title: "Your Air Pollution Makes Me Sick! Estimating the Spillover Effect of PM2.5 on Emergency Room Visits in Chile"
       url: "https://openjournals.wu.ac.at/ojs/index.php/region/article/view/399"
@@ -89,9 +88,10 @@
     - "Discrete choice"
     - "Urban amenities"
     - "Subjective well-being"
+    - "Random parameters"
   articles:
     - title: "Are preferences for city attributes heterogenous?: An assessment using a discrete choice experiment"
-      url: "#"
+      url: "https://www.sciencedirect.com/science/article/pii/S105681902300310X?via%3Dihub"
   links:
     - text: "ResearchGate"
       url: "https://www.researchgate.net/profile/Diana-Romero-Espinosa"
@@ -109,12 +109,13 @@
     - "Spatial econometrics"
     - "Education"
     - "Public efficiency"
+    - "Causal inference"
   articles:
     - title: "Effects of spatial competition on public educational efficiency: An analysis for the Chilean Metropolitan Region"
-      url: "#"
+      url: "https://www.tandfonline.com/doi/full/10.1080/02680939.2021.1966102?__cf_chl_f_tk=InwHEHUDLPV4CRwOuy_FSHow9_ekJuK2OGV6Gp7VjYw-1783197821-1.0.1.1-XZNVXvilzuiT9x_kdmFHsd7BQ_du9F5Nzo12KaddKBs"
   links:
     - text: "Google Scholar"
-      url: "#"
+      url: "https://scholar.google.com/citations?user=omRJ3IoAAAAJ&hl=es"
 
 - id: "alejandra-blanco"
   name: "Alejandra Blanco"
@@ -123,15 +124,15 @@
   co_advisors: []
   thesis: "Socio-emotional development and body weight in early childhood: Is the weight penalty sensitive to imperfect instruments?"
   year: 2021
-  current_position: "Research assistant, Universidad Católica del Norte"
+  current_position: "Autoridad Nacional de Licencias Ambientales, Colombia"
   topics:
     - "Health economics"
     - "Child development"
     - "Causal inference"
     - "Instrumental variables"
   articles:
-    - title: "Socio-emotional development and body weight in early childhood: Is the weight penalty sensitive to imperfect instruments?"
-      url: "#"
+    - title: "Bodyweight and human capital development: Assessing the impact of obesity on socioemotional skills during childhood in Chile"
+      url: "https://www.sciencedirect.com/science/article/pii/S1570677X22000867?via%3Dihub"
   links: []
 
 - id: "cristian-ortiz"
@@ -145,11 +146,11 @@
   topics:
     - "Discrete choice"
     - "Environmental economics"
-    - "Endogeneity"
+    - "Causal inference"
     - "Heterogeneous preferences"
   articles:
     - title: "Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors: Incorporating both heterogeneous preferences and income endogeneity"
-      url: "https://www.sciencedirect.com/science/article/pii/S0301479721021022?dgcid=author"
+      url: "https://www.sciencedirect.com/science/article/pii/S0301479721021022?via%3Dihub"
   links:
     - text: "Google Scholar"
       url: "https://scholar.google.com/citations?hl=es&sortby=pubdate&user=K-G1nncAAAAJ&view_op=list_works"
