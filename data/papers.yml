@@ -4,7 +4,8 @@
   venue: Spatial Statistics
   status: publication
   year: 2025
-  description: Article on spatial econometric methods and applications.
+  description: Develops a J-test for spatial autoregressive binary response models
+    and evaluates its finite-sample performance through simulation and applied evidence.
   categories:
   - Spatial econometrics
   - Binary response models
@@ -13,14 +14,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.spasta.2025.100903
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Spatial%20Statistics
+  - text: OpenAlex
+    url: https://openalex.org/W4409902148
+  doi: 10.1016/j.spasta.2025.100903
+  metrics:
+    citations_openalex: 1
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4409902148
+    openalex_url: https://openalex.org/W4409902148
 - id: happy-where-you-are-exploring-migration-intentions-and-subjective-well-being-through-a-discrete-choice-experiment
-  title: Happy Where You Are? Exploring Migration Intentions and Subjective Well-being Through a Discrete Choice Experiment
+  title: Happy Where You Are? Exploring Migration Intentions and Subjective Well-being
+    Through a Discrete Choice Experiment
   authors: Victor Iturra and Mauricio Sarrias
   venue: Journal of Happiness Studies
   status: publication
   year: 2025
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Studies how subjective well-being shapes migration intentions using
+    a discrete choice experiment that captures heterogeneity in location preferences.
   categories:
   - Discrete choice
   - Subjective well-being
@@ -29,14 +42,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1007/s10902-025-00940-1
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Happiness%20Studies
+  - text: OpenAlex
+    url: https://openalex.org/W4412615249
+  doi: 10.1007/s10902-025-00940-1
+  metrics:
+    citations_openalex: 1
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4412615249
+    openalex_url: https://openalex.org/W4412615249
 - id: instrumental-variable-estimation-with-observed-and-unobserved-heterogeneity-of-the-treatment-and-instrument-effect-a-latent-class-approach
-  title: 'Instrumental variable estimation with observed and unobserved heterogeneity of the treatment and instrument effect: a latent class approach'
+  title: 'Instrumental variable estimation with observed and unobserved heterogeneity
+    of the treatment and instrument effect: a latent class approach'
   authors: Pablo Rodriguez and Mauricio Sarrias
   venue: Empirical Economics
   status: publication
   year: 2024
-  description: Article on endogeneity, treatment effects, and heterogeneous responses.
+  description: Develops a latent-class IV framework for treatment-effect estimation
+    when both treatment responses and instrument effects are heterogeneous.
   categories:
   - Discrete choice
   - Causal inference
@@ -46,14 +71,25 @@
     url: https://doi.org/10.1007/s00181-024-02658-0
   - text: Code
     url: https://github.com/mauricio1986/ivhetLc
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Empirical%20Economics
+  - text: OpenAlex
+    url: https://openalex.org/W4402122984
+  doi: 10.1007/s00181-024-02658-0
+  metrics:
+    citations_openalex: 0
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4402122984
+    openalex_url: https://openalex.org/W4402122984
 - id: amenities-and-individual-heterogeneity-in-the-return-to-schooling
   title: Amenities and individual heterogeneity in the return to schooling
   authors: Victor Iturra and Mauricio Sarrias
   venue: Letters in Spatial and Resource Sciences
   status: publication
   year: 2023
-  description: Published article in Letters in Spatial and Resource Sciences.
+  description: Analyzes how local amenities and individual heterogeneity shape the
+    estimated returns to schooling.
   categories:
   - Discrete choice
   - Education
@@ -61,14 +97,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1007/s12076-022-00322-8
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Letters%20in%20Spatial%20and%20Resource%20Sciences
+  - text: OpenAlex
+    url: https://openalex.org/W4317895872
+  doi: 10.1007/s12076-022-00322-8
+  metrics:
+    citations_openalex: 0
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4317895872
+    openalex_url: https://openalex.org/W4317895872
 - id: estimating-heteroskedastic-and-instrumental-variable-models-for-binary-outcome-variables-in-r
-  title: Estimating Heteroskedastic and Instrumental Variable Models for Binary Outcome Variables in R
+  title: Estimating Heteroskedastic and Instrumental Variable Models for Binary Outcome
+    Variables in R
   authors: Mauricio Sarrias
   venue: The R Journal
   status: publication
   year: 2023
-  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  description: Introduces R tools for binary outcome models with heteroskedasticity
+    and endogenous regressors, with emphasis on applied microeconometric use.
   categories:
   - Binary response models
   - Discrete choice
@@ -77,14 +125,25 @@
   links:
   - text: DOI
     url: https://doi.org/10.32614/rj-2023-050
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=The%20R%20Journal
+  - text: OpenAlex
+    url: https://openalex.org/W4388616705
+  doi: 10.32614/rj-2023-050
+  metrics:
+    citations_openalex: 1
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4388616705
+    openalex_url: https://openalex.org/W4388616705
 - id: gmm-estimators-for-binary-spatial-models-in-r
   title: GMM Estimators for Binary Spatial Models in R
   authors: Gianfranco Piras and Mauricio Sarrias
   venue: Journal of Statistical Software
   status: publication
   year: 2023
-  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  description: Presents GMM estimators for binary spatial models and their implementation
+    in R, combining methodological detail with reproducible software examples.
   categories:
   - Spatial econometrics
   - Binary response models
@@ -92,28 +151,50 @@
   links:
   - text: DOI
     url: https://doi.org/10.18637/jss.v107.i08
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Statistical%20Software
+  - text: OpenAlex
+    url: https://openalex.org/W4387585929
+  doi: 10.18637/jss.v107.i08
+  metrics:
+    citations_openalex: 7
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4387585929
+    openalex_url: https://openalex.org/W4387585929
 - id: heterogeneous-spatial-models-in-r-spatial-regimes-models
   title: 'Heterogeneous spatial models in R: spatial regimes models'
   authors: Gianfranco Piras and Mauricio Sarrias
   venue: Journal of Spatial Econometrics
   status: publication
   year: 2023
-  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  description: Provides R tools for spatial regimes models, allowing spatial relationships
+    and covariate effects to differ across groups or regions.
   categories:
   - Spatial econometrics
   - R package
   links:
   - text: DOI
     url: https://doi.org/10.1007/s43071-023-00034-1
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Spatial%20Econometrics
+  - text: OpenAlex
+    url: https://openalex.org/W4385073382
+  doi: 10.1007/s43071-023-00034-1
+  metrics:
+    citations_openalex: 3
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4385073382
+    openalex_url: https://openalex.org/W4385073382
 - id: one-or-two-step-evaluating-gmm-efficiency-for-spatial-binary-probit-models
   title: One or two-step? Evaluating GMM efficiency for spatial binary probit models
   authors: Gianfranco Piras and Mauricio Sarrias
   venue: Journal of Choice Modelling
   status: publication
   year: 2023
-  description: Article on spatial econometric methods and applications.
+  description: Compares one-step and two-step GMM strategies for spatial binary probit
+    models, focusing on efficiency, bias, and practical estimation trade-offs.
   categories:
   - Spatial econometrics
   - Binary response models
@@ -121,28 +202,52 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jocm.2023.100432
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Choice%20Modelling
+  - text: OpenAlex
+    url: https://openalex.org/W4384435919
+  doi: 10.1016/j.jocm.2023.100432
+  metrics:
+    citations_openalex: 6
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4384435919
+    openalex_url: https://openalex.org/W4384435919
 - id: bodyweight-and-human-capital-development-assessing-the-impact-of-obesity-on-socioemotional-skills-during-childhood-in-chile
-  title: 'Bodyweight and human capital development: Assessing the impact of obesity on socioemotional skills during childhood in Chile'
+  title: 'Bodyweight and human capital development: Assessing the impact of obesity
+    on socioemotional skills during childhood in Chile'
   authors: Mauricio Sarrias and Alejandra Blanco
   venue: Economics & Human Biology
   status: publication
   year: 2022
-  description: Article on health, human capital, and applied econometric analysis.
+  description: Estimates the effect of childhood obesity on socioemotional skill formation
+    in Chile, linking health status to human capital development.
   categories:
   - Causal inference
   - Health economics
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.ehb.2022.101190
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Economics%20%26%20Human%20Biology
+  - text: OpenAlex
+    url: https://openalex.org/W4306711206
+  doi: 10.1016/j.ehb.2022.101190
+  metrics:
+    citations_openalex: 8
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4306711206
+    openalex_url: https://openalex.org/W4306711206
 - id: estimating-the-non-pecuniary-benefit-of-engaging-in-pro-environmental-behaviors-incorporating-both-heterogeneous-preferences-and-income-endogeneity
-  title: 'Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors: Incorporating both heterogeneous preferences and income endogeneity'
+  title: 'Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors:
+    Incorporating both heterogeneous preferences and income endogeneity'
   authors: Cristian Ortiz and Mauricio Sarrias
   venue: Journal of Environmental Management
   status: publication
   year: 2022
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Estimates the non-pecuniary benefits of pro-environmental behavior
+    while accounting for preference heterogeneity and income endogeneity.
   categories:
   - Discrete choice
   - Causal inference
@@ -151,14 +256,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jenvman.2021.114040
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Environmental%20Management
+  - text: OpenAlex
+    url: https://openalex.org/W3214321017
+  doi: 10.1016/j.jenvman.2021.114040
+  metrics:
+    citations_openalex: 11
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3214321017
+    openalex_url: https://openalex.org/W3214321017
 - id: the-impact-of-bodyweight-on-life-satisfaction-among-school-aged-children-are-the-mechanisms-gender-based
-  title: 'The Impact of Bodyweight on Life Satisfaction among School-Aged Children: Are the Mechanisms Gender-Based?'
+  title: 'The Impact of Bodyweight on Life Satisfaction among School-Aged Children:
+    Are the Mechanisms Gender-Based?'
   authors: Victor Iturra and Mauricio Sarrias
   venue: Child Indicators Research
   status: publication
   year: 2022
-  description: Article on subjective well-being and applied microeconometric analysis.
+  description: Assesses how bodyweight affects life satisfaction among school-aged
+    children and whether the underlying mechanisms differ by gender.
   categories:
   - Causal inference
   - Subjective well-being
@@ -166,14 +283,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1007/s12187-022-09973-x
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Child%20Indicators%20Research
+  - text: OpenAlex
+    url: https://openalex.org/W4308565078
+  doi: 10.1007/s12187-022-09973-x
+  metrics:
+    citations_openalex: 5
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4308565078
+    openalex_url: https://openalex.org/W4308565078
 - id: valuing-urban-drinking-water-supply-attributes-a-case-study-from-chile
   title: 'Valuing urban drinking water supply attributes: A case study from Chile'
-  authors: Cristian González-Santander and Mauricio Sarrias and Ricardo A. Daziano and Lisandro Roco
+  authors: Cristian González-Santander and Mauricio Sarrias and Ricardo A. Daziano
+    and Lisandro Roco
   venue: Water Resources and Economics
   status: publication
   year: 2022
-  description: Published article in Water Resources and Economics.
+  description: Uses discrete choice methods to value urban drinking-water attributes
+    in Chile, highlighting household preferences over service quality.
   categories:
   - Discrete choice
   - Environmental economics
@@ -182,14 +311,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.wre.2022.100204
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Water%20Resources%20and%20Economics
+  - text: OpenAlex
+    url: https://openalex.org/W4281695812
+  doi: 10.1016/j.wre.2022.100204
+  metrics:
+    citations_openalex: 2
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4281695812
+    openalex_url: https://openalex.org/W4281695812
 - id: your-air-pollution-makes-me-sick-estimating-the-spatial-spillover-effects-of-pm2-5-emissions-on-emergency-room-visits-in-chile
-  title: Your Air Pollution Makes Me Sick! Estimating the Spatial Spillover Effects of PM2.5 Emissions on Emergency Room Visits in Chile
+  title: Your Air Pollution Makes Me Sick! Estimating the Spatial Spillover Effects
+    of PM2.5 Emissions on Emergency Room Visits in Chile
   authors: Mauricio Sarrias and Anita Molina-Varas
   venue: REGION
   status: publication
   year: 2022
-  description: Article on spatial econometric methods and applications.
+  description: Estimates spatial spillover effects of PM2.5 emissions on emergency-room
+    visits in Chile, highlighting health impacts beyond local exposure.
   categories:
   - Spatial econometrics
   - Health economics
@@ -197,14 +338,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.18335/region.v9i2.399
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=REGION
+  - text: OpenAlex
+    url: https://openalex.org/W4283830339
+  doi: 10.18335/region.v9i2.399
+  metrics:
+    citations_openalex: 2
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W4283830339
+    openalex_url: https://openalex.org/W4283830339
 - id: a-two-recursive-equation-model-to-correct-for-endogeneity-in-latent-class-binary-probit-models
-  title: A two recursive equation model to correct for endogeneity in latent class binary probit models
+  title: A two recursive equation model to correct for endogeneity in latent class
+    binary probit models
   authors: Mauricio Sarrias
   venue: Journal of Choice Modelling
   status: publication
   year: 2021
-  description: Article on endogeneity, treatment effects, and heterogeneous responses.
+  description: Develops a recursive-equation approach to correct endogeneity in latent-class
+    binary probit models.
   categories:
   - Discrete choice
   - Binary response models
@@ -213,27 +366,50 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jocm.2021.100301
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Choice%20Modelling
+  - text: OpenAlex
+    url: https://openalex.org/W3175325998
+  doi: 10.1016/j.jocm.2021.100301
+  metrics:
+    citations_openalex: 8
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3175325998
+    openalex_url: https://openalex.org/W3175325998
 - id: the-double-burden-of-being-a-woman-and-obese-evidence-from-the-chilean-labor-market
-  title: "The Double Burden of Being A Woman and Obese: Evidence from the Chilean Labor Market"
+  title: 'The Double Burden of Being A Woman and Obese: Evidence from the Chilean
+    Labor Market'
   authors: Mauricio Sarrias and Victor Iturra
   venue: Feminist Economics
   status: publication
   year: 2021
-  description: Article on obesity and labor market.
-  categories:
-  - Health economics
+  description: Studies the labor-market penalties associated with obesity in Chile,
+    emphasizing the additional burden faced by women.
+  categories: Health economics
   links:
   - text: DOI
     url: https://doi.org/10.1080/13545701.2021.1988127
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Feminist%20Economics
+  - text: OpenAlex
+    url: https://openalex.org/W3217481485
+  doi: 10.1080/13545701.2021.1988127
+  metrics:
+    citations_openalex: 10
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3217481485
+    openalex_url: https://openalex.org/W3217481485
 - id: are-preferences-for-city-attributes-heterogeneous-an-assessment-using-a-discrete-choice-experiment
-  title: Are preferences for city attributes heterogeneous? An assessment using a discrete choice experiment
+  title: Are preferences for city attributes heterogeneous? An assessment using a
+    discrete choice experiment
   authors: Diana Romero-Espinosa and Mauricio Sarrias and Ricardo Daziano
   venue: Papers in Regional Science
   status: publication
   year: 2021
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Uses a discrete choice experiment to measure heterogeneity in preferences
+    for city attributes and urban amenities.
   categories:
   - Discrete choice
   - Mixed logit
@@ -241,14 +417,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1111/pirs.12566
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Papers%20in%20Regional%20Science
+  - text: OpenAlex
+    url: https://openalex.org/W3047482119
+  doi: 10.1111/pirs.12566
+  metrics:
+    citations_openalex: 9
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3047482119
+    openalex_url: https://openalex.org/W3047482119
 - id: effects-of-spatial-competition-on-public-educational-efficiency-an-analysis-for-the-chilean-metropolitan-region
-  title: 'Effects of spatial competition on public educational efficiency: an analysis for the Chilean Metropolitan Region'
+  title: 'Effects of spatial competition on public educational efficiency: an analysis
+    for the Chilean Metropolitan Region'
   authors: Camilo Quintero-Fragozo and Yasna Cortés and Mauricio Sarrias
   venue: Journal of Education Policy
   status: publication
   year: 2021
-  description: Article on spatial econometric methods and applications.
+  description: Analyzes how spatial competition among municipalities affects public
+    educational efficiency in the Chilean Metropolitan Region.
   categories:
   - Spatial econometrics
   - Causal inference
@@ -257,14 +445,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1080/02680939.2021.1966102
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Education%20Policy
+  - text: OpenAlex
+    url: https://openalex.org/W3197384948
+  doi: 10.1080/02680939.2021.1966102
+  metrics:
+    citations_openalex: 2
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3197384948
+    openalex_url: https://openalex.org/W3197384948
 - id: individual-specific-posterior-distributions-from-mixed-logit-models-properties-limitations-and-diagnostic-checks
-  title: 'Individual-specific posterior distributions from Mixed Logit models: Properties, limitations and diagnostic checks'
+  title: 'Individual-specific posterior distributions from Mixed Logit models: Properties,
+    limitations and diagnostic checks'
   authors: Mauricio Sarrias
   venue: Journal of Choice Modelling
   status: publication
   year: 2020
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Studies individual-specific posterior distributions from mixed logit
+    models, clarifying their properties, limitations, and diagnostic use.
   categories:
   - Discrete choice
   - Simulation
@@ -273,14 +473,25 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jocm.2020.100224
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Choice%20Modelling
+  - text: OpenAlex
+    url: https://openalex.org/W3037503061
+  doi: 10.1016/j.jocm.2020.100224
+  metrics:
+    citations_openalex: 27
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3037503061
+    openalex_url: https://openalex.org/W3037503061
 - id: random-parameters-and-spatial-heterogeneity-using-rchoice-in-r
   title: Random Parameters and Spatial Heterogeneity using Rchoice in R
   authors: Mauricio Sarrias
   venue: REGION
   status: publication
   year: 2020
-  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  description: Shows how the Rchoice package can estimate random-parameter models
+    and spatial heterogeneity in applied regional analysis.
   categories:
   - Spatial econometrics
   - Discrete choice
@@ -289,14 +500,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.18335/region.v7i1.279
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=REGION
+  - text: OpenAlex
+    url: https://openalex.org/W3012192580
+  doi: 10.18335/region.v7i1.279
+  metrics:
+    citations_openalex: 4
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3012192580
+    openalex_url: https://openalex.org/W3012192580
 - id: how-much-should-we-pay-for-mental-health-deterioration-the-subjective-monetary-value-of-mental-health-after-the-27f-chilean-earthquake
-  title: How Much Should We Pay for Mental Health Deterioration? The Subjective Monetary Value of Mental Health After the 27F Chilean Earthquake
+  title: How Much Should We Pay for Mental Health Deterioration? The Subjective Monetary
+    Value of Mental Health After the 27F Chilean Earthquake
   authors: Mauricio Sarrias and Benjamin Jara
   venue: Journal of Happiness Studies
   status: publication
   year: 2019
-  description: Article on health, human capital, and applied econometric analysis.
+  description: Estimates the subjective monetary value of mental-health deterioration
+    after the 27F Chilean earthquake.
   categories:
   - Subjective well-being
   - Health economics
@@ -305,14 +528,26 @@
     url: https://doi.org/10.1007/s10902-019-00112-y
   - text: Code
     url: https://data.mendeley.com/datasets/4d7mm7rk2n/1
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Happiness%20Studies
+  - text: OpenAlex
+    url: https://openalex.org/W2934266999
+  doi: 10.1007/s10902-019-00112-y
+  metrics:
+    citations_openalex: 12
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2934266999
+    openalex_url: https://openalex.org/W2934266999
 - id: the-monetary-subjective-health-evaluation-for-commuting-long-distances-in-chile-a-latent-class-analysis
-  title: 'The monetary subjective health evaluation for commuting long distances in Chile: A latent class analysis'
+  title: 'The monetary subjective health evaluation for commuting long distances in
+    Chile: A latent class analysis'
   authors: J. Palomino and M. Sarrias
   venue: Papers in Regional Science
   status: publication
   year: 2019
-  description: Article on health, human capital, and applied econometric analysis.
+  description: Uses latent-class methods to estimate the subjective health cost of
+    long-distance commuting in Chile.
   categories:
   - Discrete choice
   - Latent class
@@ -323,14 +558,26 @@
   links:
   - text: DOI
     url: https://onlinelibrary.wiley.com/doi/abs/10.1111/pirs.12416
-  
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Papers%20in%20Regional%20Science
+  - text: OpenAlex
+    url: https://openalex.org/W2909367112
+  doi: 10.1111/pirs.12416
+  metrics:
+    citations_openalex: 15
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2909367112
+    openalex_url: https://openalex.org/W2909367112
 - id: we-do-not-have-the-same-tastes-evaluating-individual-heterogeneity-in-the-preferences-for-amenities
-  title: We Do Not Have the Same Tastes! Evaluating Individual Heterogeneity in the Preferences for Amenities
+  title: We Do Not Have the Same Tastes! Evaluating Individual Heterogeneity in the
+    Preferences for Amenities
   authors: G. Ahumada and V. Iturra and M. Sarrias
   venue: Journal of Happiness Studies
   status: publication
   year: 2019
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Evaluates individual heterogeneity in preferences for amenities, showing
+    that willingness to pay varies substantially across people.
   categories:
   - Discrete choice
   - Regional economics
@@ -339,14 +586,26 @@
   links:
   - text: DOI
     url: https://link.springer.com/article/10.1007/s10902-019-00081-2
-  
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Happiness%20Studies
+  - text: OpenAlex
+    url: https://openalex.org/W2913381744
+  doi: 10.1007/s10902-019-00081-2
+  metrics:
+    citations_openalex: 14
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2913381744
+    openalex_url: https://openalex.org/W2913381744
 - id: do-monetary-subjective-well-being-evaluations-vary-across-space-comparing-continuous-and-discrete-spatial-heterogeneity
-  title: Do monetary subjective well-being evaluations vary across space? Comparing continuous and discrete spatial heterogeneity
+  title: Do monetary subjective well-being evaluations vary across space? Comparing
+    continuous and discrete spatial heterogeneity
   authors: Mauricio Sarrias
   venue: Spatial Economic Analysis
   status: publication
   year: 2018
-  description: Article on spatial econometric methods and applications.
+  description: Compares continuous and discrete models of spatial heterogeneity in
+    subjective well-being valuations.
   categories:
   - Spatial econometrics
   - Subjective well-being
@@ -356,14 +615,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.1080/17421772.2018.1485968
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Spatial%20Economic%20Analysis
+  - text: OpenAlex
+    url: https://openalex.org/W2884055031
+  doi: 10.1080/17421772.2018.1485968
+  metrics:
+    citations_openalex: 15
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2884055031
+    openalex_url: https://openalex.org/W2884055031
 - id: individual-specific-point-and-interval-conditional-estimates-of-latent-class-logit-parameters
-  title: Individual-specific point and interval conditional estimates of latent class logit parameters
+  title: Individual-specific point and interval conditional estimates of latent class
+    logit parameters
   authors: Mauricio Sarrias and Ricardo A. Daziano
   venue: Journal of Choice Modelling
   status: publication
   year: 2018
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Derives and applies individual-specific point and interval estimates
+    for parameters in latent-class logit models.
   categories:
   - Discrete choice
   - Latent class
@@ -371,27 +642,49 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jocm.2017.10.004
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Choice%20Modelling
+  - text: OpenAlex
+    url: https://openalex.org/W2766431333
+  doi: 10.1016/j.jocm.2017.10.004
+  metrics:
+    citations_openalex: 30
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2766431333
+    openalex_url: https://openalex.org/W2766431333
 - id: regional-concentration-and-national-economic-growth-in-brazil-and-chile
   title: Regional concentration and national economic growth in Brazil and Chile
   authors: P. Aroca and C. Azzoni and M. Sarrias
   venue: Letters in Spatial and Resource Sciences
   status: publication
   year: 2018
-  description: Published article in Letters in Spatial and Resource Sciences.
-  categories:
-  - Regional economics
+  description: Examines the relationship between regional concentration and national
+    economic growth in Brazil and Chile.
+  categories: Regional economics
   links:
   - text: DOI
     url: https://link.springer.com/article/10.1007/s12076-018-0217-2
-  
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Letters%20in%20Spatial%20and%20Resource%20Sciences
+  - text: OpenAlex
+    url: https://openalex.org/W2889160826
+  doi: 10.1007/s12076-018-0217-2
+  metrics:
+    citations_openalex: 14
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2889160826
+    openalex_url: https://openalex.org/W2889160826
 - id: are-consumers-willing-to-pay-to-let-cars-drive-for-them-analyzing-response-to-autonomous-vehicles
-  title: Are consumers willing to pay to let cars drive for them? Analyzing response to autonomous vehicles
+  title: Are consumers willing to pay to let cars drive for them? Analyzing response
+    to autonomous vehicles
   authors: Ricardo A. Daziano and Mauricio Sarrias and Benjamin Leard
   venue: 'Transportation Research Part C: Emerging Technologies'
   status: publication
   year: 2017
-  description: Article on preference heterogeneity and discrete choice modeling.
+  description: Uses stated-choice data to estimate willingness to pay for autonomous
+    vehicle features and related transportation technologies.
   categories:
   - Discrete choice
   - Transportation
@@ -400,27 +693,49 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.trc.2017.03.003
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Transportation%20Research%20Part%20C%3A%20Emerging%20Technologies
+  - text: OpenAlex
+    url: https://openalex.org/W2543298339
+  doi: 10.1016/j.trc.2017.03.003
+  metrics:
+    citations_openalex: 332
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2543298339
+    openalex_url: https://openalex.org/W2543298339
 - id: convergence-to-the-managerial-frontier
   title: Convergence to the managerial frontier
   authors: William F. Maloney and Mauricio Sarrias
   venue: Journal of Economic Behavior & Organization
   status: publication
   year: 2017
-  description: Published article in Journal of Economic Behavior & Organization.
-  categories:
-  - Applied microeconometrics
+  description: Studies convergence toward a managerial frontier, linking firm or management
+    performance to productivity dynamics.
+  categories: Applied microeconometrics
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jebo.2017.01.002
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Economic%20Behavior%20%26%20Organization
+  - text: OpenAlex
+    url: https://openalex.org/W3021215711
+  doi: 10.1016/j.jebo.2017.01.002
+  metrics:
+    citations_openalex: 21
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3021215711
+    openalex_url: https://openalex.org/W3021215711
 - id: multinomial-logit-models-with-continuous-and-discrete-individual-heterogeneity-in-r-the-gmnl-package
-  title: 'Multinomial Logit Models with Continuous and Discrete Individual Heterogeneity in R: The gmnl Package'
+  title: 'Multinomial Logit Models with Continuous and Discrete Individual Heterogeneity
+    in R: The gmnl Package'
   authors: Mauricio Sarrias and Ricardo Daziano
   venue: Journal of Statistical Software
   status: publication
   year: 2017
-  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  description: Introduces the gmnl package for estimating multinomial logit models
+    with continuous and discrete individual heterogeneity in R.
   categories:
   - Discrete choice
   - R package
@@ -429,14 +744,25 @@
   links:
   - text: DOI
     url: https://doi.org/10.18637/jss.v079.i02
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Statistical%20Software
+  - text: OpenAlex
+    url: https://openalex.org/W2734890889
+  doi: 10.18637/jss.v079.i02
+  metrics:
+    citations_openalex: 240
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2734890889
+    openalex_url: https://openalex.org/W2734890889
 - id: discrete-choice-models-with-random-parameters-in-r-the-rchoice-package
   title: 'Discrete Choice Models with Random Parameters in R: The Rchoice Package'
   authors: Mauricio Sarrias
   venue: Journal of Statistical Software
   status: publication
   year: 2016
-  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  description: Introduces the Rchoice package for estimating discrete choice models
+    with random parameters in R.
   categories:
   - Discrete choice
   - R package
@@ -444,14 +770,26 @@
   links:
   - text: DOI
     url: https://doi.org/10.18637/jss.v074.i10
-    
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Statistical%20Software
+  - text: OpenAlex
+    url: https://openalex.org/W2532563432
+  doi: 10.18637/jss.v074.i10
+  metrics:
+    citations_openalex: 81
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W2532563432
+    openalex_url: https://openalex.org/W2532563432
 - id: heterogeneity-in-subjective-wellbeing-an-application-to-occupational-allocation-in-africa
-  title: 'Heterogeneity in subjective wellbeing: An application to occupational allocation in Africa'
+  title: 'Heterogeneity in subjective wellbeing: An application to occupational allocation
+    in Africa'
   authors: Paolo Falco and William F. Maloney and Bob Rijkers and Mauricio Sarrias
   venue: Journal of Economic Behavior & Organization
   status: publication
   year: 2015
-  description: Article on subjective well-being and applied microeconometric analysis.
+  description: Analyzes heterogeneity in subjective well-being across occupational
+    allocations in Africa using applied discrete choice methods.
   categories:
   - Subjective well-being
   - Discrete choice
@@ -459,3 +797,14 @@
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jebo.2014.12.022
+  - text: Journal metrics
+    url: https://www.scimagojr.com/journalsearch.php?q=Journal%20of%20Economic%20Behavior%20%26%20Organization
+  - text: OpenAlex
+    url: https://openalex.org/W3122493637
+  doi: 10.1016/j.jebo.2014.12.022
+  metrics:
+    citations_openalex: 42
+    journal_quartile: ~
+    metrics_year: 2026
+    openalex_id: https://openalex.org/W3122493637
+    openalex_url: https://openalex.org/W3122493637
