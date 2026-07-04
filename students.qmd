@@ -1,0 +1,212 @@
+---
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+---
+
+```{r}
+library(yaml)
+library(htmltools)
+
+students <- yaml::read_yaml("data/students.yml")
+
+esc <- function(x) htmltools::htmlEscape(as.character(x))
+
+get_value <- function(x, name, default = "") {
+  if (!is.null(x[[name]])) x[[name]] else default
+}
+
+slugify <- function(x) {
+  x <- tolower(x)
+  x <- gsub("[^a-z0-9]+", "-", x)
+  x <- gsub("^-|-$", "", x)
+  x
+}
+
+make_tags <- function(topics) {
+  if (length(topics) == 0) return("")
+  paste0(
+    vapply(
+      topics,
+      function(topic) {
+        paste0('<a class="tag" href="#', slugify(topic), '">', esc(topic), '</a>')
+      },
+      character(1)
+    ),
+    collapse = "\n"
+  )
+}
+
+make_links <- function(links) {
+  if (length(links) == 0) return("")
+  valid_links <- links[vapply(links, function(x) !is.null(x$url) && x$url != "#", logical(1))]
+  if (length(valid_links) == 0) return("")
+
+  paste(
+    vapply(
+      valid_links,
+      function(x) paste0('<a href="', esc(x$url), '">', esc(x$text), '</a>'),
+      character(1)
+    ),
+    collapse = " · "
+  )
+}
+
+make_articles <- function(articles) {
+  if (length(articles) == 0) return("")
+
+  items <- vapply(
+    articles,
+    function(a) {
+      title <- esc(get_value(a, "title"))
+      url <- get_value(a, "url", "#")
+      if (!is.null(url) && url != "#") {
+        paste0('<li><a href="', esc(url), '">', title, '</a></li>')
+      } else {
+        paste0('<li>', title, '</li>')
+      }
+    },
+    character(1)
+  )
+
+  paste0(
+    '<div class="student-articles"><strong>Articles from thesis</strong><ul>',
+    paste(items, collapse = "\n"),
+    '</ul></div>'
+  )
+}
+
+make_coadvisors <- function(co_advisors) {
+  if (length(co_advisors) == 0) return("")
+  paste0(
+    '<div class="student-meta"><strong>Co-advising:</strong> ',
+    esc(paste(co_advisors, collapse = ", ")),
+    '</div>'
+  )
+}
+
+make_card <- function(s) {
+  links_html <- make_links(get_value(s, "links", list()))
+
+  if (links_html != "") {
+    links_html <- paste0('<div class="student-links">', links_html, '</div>')
+  }
+
+  paste0(
+    '<div class="student-card" id="', esc(get_value(s, "id")), '">\n',
+    '<h3>', esc(get_value(s, "name")), '</h3>\n',
+    '<div class="student-meta"><strong>', esc(get_value(s, "degree_type")), ' alumnus</strong> · Defense: ', esc(get_value(s, "year")), '</div>\n',
+    '<div class="student-meta">', esc(get_value(s, "degree")), '</div>\n',
+    make_coadvisors(get_value(s, "co_advisors", list())), '\n',
+    '<p class="student-thesis"><strong>Thesis:</strong> ', esc(get_value(s, "thesis")), '</p>\n',
+    '<p><strong>Current position:</strong> ', esc(get_value(s, "current_position")), '</p>\n',
+    make_tags(get_value(s, "topics", list())), '\n',
+    make_articles(get_value(s, "articles", list())), '\n',
+    links_html, '\n',
+    '</div>\n'
+  )
+}
+
+students <- students[order(vapply(students, function(s) -as.numeric(get_value(s, "year", 0)), numeric(1)))]
+
+n_total <- length(students)
+n_master <- sum(vapply(students, function(s) get_value(s, "degree_type") == "Master", logical(1)))
+n_phd <- sum(vapply(students, function(s) get_value(s, "degree_type") == "PhD", logical(1)))
+
+all_topics <- sort(unique(unlist(lapply(students, function(s) get_value(s, "topics", list())))))
+```
+
+# Students & Alumni
+
+I have advised graduate students working on applied econometrics, spatial econometrics, discrete choice models, causal inference, environmental economics, health economics, education, and human capital.
+
+::: {.student-summary}
+::: {.student-stat}
+**`r n_total`**  
+Graduate alumni
+:::
+
+::: {.student-stat}
+**`r n_master`**  
+Master alumni
+:::
+
+::: {.student-stat}
+**`r n_phd`**  
+PhD alumni
+:::
+:::
+
+## Research areas {#research-areas}
+
+```{r}
+#| results: asis
+
+for (topic in all_topics) {
+  cat('<a class="tag" href="#', slugify(topic), '">', esc(topic), '</a>\n', sep = "")
+}
+```
+
+---
+
+## Doctoral alumni {#doctoral-alumni}
+
+```{r}
+#| results: asis
+
+selected <- students[vapply(students, function(s) get_value(s, "degree_type") == "PhD", logical(1))]
+
+if (length(selected) == 0) {
+  cat("No doctoral alumni listed yet.\n")
+} else {
+  cat('<div class="student-grid">\n')
+  for (s in selected) cat(make_card(s))
+  cat('</div>\n')
+}
+```
+
+## Master alumni {#master-alumni}
+
+```{r}
+#| results: asis
+
+selected <- students[vapply(students, function(s) get_value(s, "degree_type") == "Master", logical(1))]
+
+if (length(selected) == 0) {
+  cat("No master alumni listed yet.\n")
+} else {
+  cat('<div class="student-grid">\n')
+  for (s in selected) cat(make_card(s))
+  cat('</div>\n')
+}
+```
+
+---
+
+## Alumni by research area {#alumni-by-research-area}
+
+```{r}
+#| results: asis
+
+for (topic in all_topics) {
+  cat("\n\n### ", esc(topic), " {#", slugify(topic), "}\n\n", sep = "")
+
+  selected <- students[vapply(
+    students,
+    function(s) topic %in% get_value(s, "topics", list()),
+    logical(1)
+  )]
+
+  selected <- selected[order(vapply(selected, function(s) -as.numeric(get_value(s, "year", 0)), numeric(1)))]
+
+  for (s in selected) {
+    cat("- [", esc(get_value(s, "name")), "](#", esc(get_value(s, "id")), ")", 
+        " — ", esc(get_value(s, "thesis")), "\n", sep = "")
+  }
+
+  cat("\n[Back to research areas](#research-areas)\n")
+}
+```

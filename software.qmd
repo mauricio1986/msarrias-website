@@ -1,0 +1,136 @@
+
+# Software
+
+I develop and maintain R packages for econometrics, with a focus on discrete choice models, limited dependent variable models, and spatial econometrics.
+
+::: {.software-hero}
+
+::: {.software-hero-text}
+My software is designed to make advanced econometric models usable for applied researchers, with emphasis on transparent syntax, simulation-based estimation, marginal effects, and reproducible empirical work.
+:::
+
+::: {.software-hero-links}
+[GitHub](https://github.com/mauricio1986){.button .primary}
+[CRAN packages](#r-packages){.button}
+[Research](research.qmd){.button}
+:::
+
+:::
+
+## R packages {#r-packages}
+
+::: {.software-grid}
+
+::: {.software-card}
+
+### gmnl
+
+<span class="tag">Discrete choice</span>
+<span class="tag">Mixed logit</span>
+<span class="tag">Latent class</span>
+<span class="tag">Random parameters</span>
+
+`gmnl` estimates multinomial logit models with observed and unobserved preference heterogeneity. It includes mixed multinomial logit, generalized multinomial logit, latent class, and mixed-mixed logit models.
+
+::: {.software-links}
+[CRAN](https://CRAN.R-project.org/package=gmnl) ·
+[GitHub](https://github.com/mauricio1986/gmnl) ·
+[JSS article](https://doi.org/10.18637/jss.v079.i02) ·
+[Manual](https://cran.r-project.org/web/packages/gmnl/gmnl.pdf)
+:::
+
+```r
+install.packages("gmnl")
+```
+
+:::
+
+::: {.software-card}
+
+### Rchoice
+
+<span class="tag">Limited dependent variables</span>
+<span class="tag">Random parameters</span>
+<span class="tag">Binary models</span>
+<span class="tag">Ordered models</span>
+
+`Rchoice` estimates binary, ordered, and count models with random parameters using simulated maximum likelihood for cross-sectional and longitudinal data.
+
+::: {.software-links}
+[CRAN](https://CRAN.R-project.org/package=Rchoice) ·
+[GitHub](https://github.com/mauricio1986/Rchoice) ·
+[JSS article](https://doi.org/10.18637/jss.v074.i10) ·
+[Manual](https://cran.r-project.org/web/packages/Rchoice/Rchoice.pdf)
+:::
+
+```r
+install.packages("Rchoice")
+```
+
+:::
+
+::: {.software-card}
+
+### spldv
+
+<span class="tag">Spatial econometrics</span>
+<span class="tag">Binary response models</span>
+<span class="tag">GMM</span>
+<span class="tag">Marginal effects</span>
+
+`spldv` estimates spatial limited dependent variable models, especially spatial autoregressive models for binary outcomes using GMM estimators.
+
+::: {.software-links}
+[CRAN](https://CRAN.R-project.org/package=spldv) ·
+[GitHub](https://github.com/gpiras/spldv) ·
+[Article](https://doi.org/10.1016/j.jocm.2023.100432) ·
+[Manual](https://cran.r-project.org/web/packages/spldv/spldv.pdf)
+:::
+
+```r
+install.packages("spldv")
+```
+
+:::
+
+::: {.software-card}
+
+### hspm
+
+<span class="tag">Spatial econometrics</span>
+<span class="tag">Spatial regimes</span>
+<span class="tag">Heterogeneity</span>
+<span class="tag">Endogeneity</span>
+
+`hspm` implements heterogeneous spatial models, including spatial regimes models with spatial lags, spatially lagged regressors, endogenous variables, and spatially autocorrelated errors.
+
+::: {.software-links}
+[CRAN](https://CRAN.R-project.org/package=hspm) ·
+[GitHub](https://github.com/gpiras/hspm) ·
+[Manual](https://cran.r-project.org/web/packages/hspm/hspm.pdf)
+:::
+
+```r
+install.packages("hspm")
+```
+
+:::
+
+:::
+
+## Package overview {#package-overview}
+
+| Package | Main area | Main contribution |
+|---|---|---|
+| [`gmnl`](https://CRAN.R-project.org/package=gmnl) | Discrete choice | Multinomial logit models with random parameters, latent classes, and flexible heterogeneity. |
+| [`Rchoice`](https://CRAN.R-project.org/package=Rchoice) | Limited dependent variables | Binary, ordered, and count models with random parameters. |
+| [`spldv`](https://CRAN.R-project.org/package=spldv) | Spatial econometrics | Spatial binary response models estimated by GMM. |
+| [`hspm`](https://CRAN.R-project.org/package=hspm) | Spatial heterogeneity | Spatial regimes and heterogeneous spatial models. |
+
+## Research code {#research-code}
+
+I also use GitHub to host research code, replication material, and work-in-progress implementations related to spatial econometrics, discrete choice, and limited dependent variable models.
+
+::: {.software-links}
+[View my GitHub profile](https://github.com/mauricio1986)
+:::

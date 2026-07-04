@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+
+website:
+  title: "Mauricio Sarrias"
+  site-url: "https://www.msarrias.com"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+      - href: software.qmd
+        text: Software
+      - href: students.qmd
+        text: Students
+    right:
+      - icon: github
+        href: https://github.com/mauricio1986
+      - icon: envelope
+        href: "mailto:msarrias86@gmail.com"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+
+
+execute:
+  freeze: false
+  cache: false

@@ -1,0 +1,251 @@
+---
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+---
+
+```{r}
+library(yaml)
+library(htmltools)
+
+# ---------------------------------------------------------
+# Read data
+# ---------------------------------------------------------
+
+papers <- yaml::read_yaml("data/papers.yml")
+
+# ---------------------------------------------------------
+# Helper functions
+# ---------------------------------------------------------
+
+esc <- function(x) {
+  htmltools::htmlEscape(as.character(x))
+}
+
+slugify <- function(x) {
+  x <- iconv(x, from = "", to = "ASCII//TRANSLIT")
+  x <- tolower(x)
+  x <- gsub("[^a-z0-9]+", "-", x)
+  x <- gsub("^-|-$", "", x)
+  x
+}
+
+get_value <- function(x, name, default = "") {
+  if (!is.null(x[[name]])) x[[name]] else default
+}
+
+make_tags <- function(categories) {
+  if (length(categories) == 0) return("")
+
+  paste0(
+    vapply(
+      categories,
+      function(cat_name) {
+        paste0(
+          '<a class="tag" href="#', slugify(cat_name), '">',
+          esc(cat_name),
+          '</a>'
+        )
+      },
+      character(1)
+    ),
+    collapse = "\n"
+  )
+}
+
+make_links <- function(links) {
+  if (length(links) == 0) return("")
+
+  paste(
+    vapply(
+      links,
+      function(x) {
+        paste0(
+          '<a href="', esc(x$url), '">',
+          esc(x$text),
+          '</a>'
+        )
+      },
+      character(1)
+    ),
+    collapse = " · "
+  )
+}
+
+make_card <- function(p) {
+  title       <- get_value(p, "title")
+  authors     <- get_value(p, "authors")
+  venue       <- get_value(p, "venue")
+  year        <- get_value(p, "year")
+  description <- get_value(p, "description")
+  categories  <- get_value(p, "categories", list())
+  links       <- get_value(p, "links", list())
+  id          <- get_value(p, "id", slugify(title))
+
+  venue_line <- paste0("*", esc(venue), "*")
+  if (!is.null(year) && year != "") {
+    venue_line <- paste0(venue_line, ", ", esc(year))
+  }
+
+  paste0(
+    '\n::: {.paper-card}\n\n',
+    '### ', esc(title), ' {#', id, '}\n\n',
+    '**', esc(authors), '.** ', venue_line, '.\n\n',
+    make_tags(categories), '\n\n',
+    esc(description), '\n\n',
+    make_links(links), '\n\n',
+    ':::\n'
+  )
+}
+
+make_section <- function(status_name, section_title, section_id) {
+  selected <- papers[vapply(
+    papers,
+    function(p) get_value(p, "status") == status_name,
+    logical(1)
+  )]
+
+  if (length(selected) == 0) return(invisible(NULL))
+
+  selected <- selected[order(vapply(
+    selected,
+    function(p) -as.numeric(get_value(p, "year", 0)),
+    numeric(1)
+  ))]
+
+  cat("\n\n## ", section_title, " {#", section_id, "}\n\n", sep = "")
+
+  for (p in selected) {
+    cat(make_card(p))
+  }
+}
+
+# ---------------------------------------------------------
+# Available sections and categories
+# ---------------------------------------------------------
+
+section_map <- list(
+  list(status = "publication",       title = "Publications",            id = "publications"),
+  list(status = "working-paper",     title = "Working papers",          id = "working-papers"),
+  list(status = "work-in-progress",  title = "Work in progress",        id = "work-in-progress"),
+  list(status = "software",          title = "Software and R packages", id = "software-and-r-packages")
+)
+
+available_sections <- section_map[vapply(
+  section_map,
+  function(s) any(vapply(papers, function(p) get_value(p, "status") == s$status, logical(1))),
+  logical(1)
+)]
+
+all_categories <- sort(unique(unlist(lapply(
+  papers,
+  function(p) get_value(p, "categories", list())
+))))
+
+# Put core categories first, then the remaining categories alphabetically.
+core_categories <- c(
+  "Spatial econometrics",
+  "Discrete choice",
+  "Binary response models",
+  "Causal inference",
+  "R package",
+  "Simulation"
+)
+
+all_categories <- c(
+  core_categories[core_categories %in% all_categories],
+  setdiff(all_categories, core_categories)
+)
+```
+
+# Research
+
+My research focuses on spatial econometrics, discrete choice models, binary response models, simulation-based estimation, causal inference, and applied microeconometrics.
+
+# Contents
+
+```{r}
+#| results: asis
+
+for (s in available_sections) {
+  cat("- [", s$title, "](#", s$id, ")\n", sep = "")
+}
+cat("- [Research by topic](#research-by-topic)\n")
+```
+
+# Categories {#categories}
+
+```{r}
+#| results: asis
+
+for (cat_name in all_categories) {
+  cat(
+    '<a class="tag" href="#',
+    slugify(cat_name),
+    '">',
+    esc(cat_name),
+    '</a>\n',
+    sep = ""
+  )
+}
+```
+
+---
+
+```{r}
+#| results: asis
+
+for (s in available_sections) {
+  make_section(
+    status_name   = s$status,
+    section_title = s$title,
+    section_id    = s$id
+  )
+}
+```
+
+---
+
+# Research by topic {#research-by-topic}
+
+```{r}
+#| results: asis
+
+for (cat_name in all_categories) {
+
+  cat("\n\n### ", esc(cat_name), " {#", slugify(cat_name), "}\n\n", sep = "")
+
+  selected <- papers[vapply(
+    papers,
+    function(p) cat_name %in% get_value(p, "categories", list()),
+    logical(1)
+  )]
+
+  selected <- selected[order(vapply(
+    selected,
+    function(p) -as.numeric(get_value(p, "year", 0)),
+    numeric(1)
+  ))]
+
+  if (length(selected) == 0) {
+    cat("No items yet.\n\n")
+  } else {
+    for (p in selected) {
+      cat(
+        "- [",
+        esc(get_value(p, "title")),
+        "](#",
+        get_value(p, "id", slugify(get_value(p, "title"))),
+        ")\n",
+        sep = ""
+      )
+    }
+    cat("\n")
+  }
+
+  cat("[Back to categories](#categories)\n")
+}
+```

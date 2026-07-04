@@ -1,0 +1,200 @@
+---
+page-layout: full
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+---
+
+```{r}
+library(yaml)
+library(htmltools)
+
+papers <- yaml::read_yaml("data/papers.yml")
+
+esc <- function(x) htmltools::htmlEscape(as.character(x))
+
+get_value <- function(x, name, default = "") {
+  if (!is.null(x[[name]])) x[[name]] else default
+}
+
+slugify <- function(x) {
+  x <- tolower(x)
+  x <- gsub("[^a-z0-9]+", "-", x)
+  x <- gsub("^-|-$", "", x)
+  x
+}
+
+make_home_tags <- function(categories, max_tags = 4) {
+  if (length(categories) == 0) return("")
+  categories <- head(categories, max_tags)
+  paste0(
+    vapply(
+      categories,
+      function(cat_name) {
+        paste0(
+          '<a class="tag" href="research.html#', slugify(cat_name), '">',
+          esc(cat_name),
+          '</a>'
+        )
+      },
+      character(1)
+    ),
+    collapse = "\n"
+  )
+}
+
+first_link <- function(links) {
+  if (length(links) == 0) return(NULL)
+  links[[1]]
+}
+
+make_recent_publication <- function(p) {
+  id          <- get_value(p, "id", slugify(get_value(p, "title")))
+  title       <- get_value(p, "title")
+  authors     <- get_value(p, "authors")
+  venue       <- get_value(p, "venue")
+  year        <- get_value(p, "year")
+  categories  <- get_value(p, "categories", list())
+  links       <- get_value(p, "links", list())
+  main_link   <- first_link(links)
+  doi_link    <- if (!is.null(main_link)) {
+    paste0('<a href="', esc(main_link$url), '">', esc(main_link$text), '</a>')
+  } else {
+    ""
+  }
+
+  paste0(
+    '\n::: {.home-pub-card}\n',
+    '### [', title, '](research.html#', id, ')\n\n',
+    '<p class="pub-meta">', esc(authors), '. <em>', esc(venue), '</em>, ', esc(year), '.</p>\n\n',
+    make_home_tags(categories), '\n\n',
+    '<p class="pub-links"><a href="research.html#', id, '">Details</a>',
+    ifelse(nchar(doi_link) > 0, paste0(' · ', doi_link), ''),
+    '</p>\n',
+    ':::\n'
+  )
+}
+
+publications <- papers[vapply(
+  papers,
+  function(p) get_value(p, "status") == "publication",
+  logical(1)
+)]
+
+publications <- publications[order(vapply(
+  publications,
+  function(p) -as.numeric(get_value(p, "year", 0)),
+  numeric(1)
+))]
+```
+
+# Mauricio Sarrias
+
+::: {.home-hero}
+::: {.home-hero-main}
+
+**Associate Professor of Economics**  
+Facultad de Economía y Negocios, Universidad de Talca, Chile
+
+I am a regional scientist (pseudo economist) working on **spatial econometrics**, **discrete choice models**,  and **binary response models**. I develop econometric methods and R software for researchers working with spatial dependence, heterogeneous preferences, and limited dependent variables.
+
+<div class="hero-buttons">
+<a class="button button-primary" href="research.html">Research</a>
+<a class="button button-secondary" href="files/cv/MS_cv_v11_en.pdf">Download CV</a>
+<a class="button button-secondary" href="contact.html">Contact</a>
+</div>
+
+:::
+
+::: {.hero-photo}
+![](files/img/ms.jpg)
+:::
+
+::: {.home-hero-side}
+
+**Research areas**
+
+<a class="tag" href="research.html#spatial-econometrics">Spatial econometrics</a>
+<a class="tag" href="research.html#discrete-choice">Discrete choice</a>
+<a class="tag" href="research.html#binary-response-models">Binary response models</a>
+<a class="tag" href="research.html#causal-inference">Causal inference</a>
+<a class="tag" href="research.html#r-package">R packages</a>
+<a class="tag" href="research.html#simulation">Simulation</a>
+
+**Quick links**
+
+- [My web of science](https://www.webofscience.com/wos/author/record/L-7627-2018)
+- [My researchgate](https://www.researchgate.net/profile/Mauricio-Sarrias)
+- [My google scholar](https://scholar.google.com/citations?user=7yqrotEAAAAJ&hl=es&oi=ao)
+- [My scopus](https://www.scopus.com/authid/detail.uri?authorId=56490633500)
+- [My github](https://github.com/mauricio1986)
+
+:::
+:::
+
+## What I do
+
+::: {.home-card-grid}
+
+::: {.home-card}
+### Research
+
+I study econometric models for spatially dependent data, discrete choices, binary outcomes, endogenous regressors, and heterogeneous effects.
+
+[See research](research.html)
+:::
+
+::: {.home-card}
+### Software
+
+I develop and maintain R tools for applied econometrics, including work related to multinomial logit models and spatial limited dependent variable models.
+
+[See software](software.html)
+:::
+
+::: {.home-card}
+### Teaching
+
+I teach econometrics, causal inference, discrete choice models, and spatial econometrics at undergraduate, master, and doctoral levels.
+
+[See teaching](teaching.html)
+:::
+
+:::
+
+## Recent publications
+
+```{r}
+#| results: asis
+
+for (p in head(publications, 4)) {
+  cat(make_recent_publication(p))
+}
+```
+
+<p class="more-link"><a href="research.html">View all research →</a></p>
+
+## Selected software
+
+::: {.home-card-grid}
+
+::: {.home-card}
+### gmnl
+
+R package for multinomial logit models with observed and unobserved preference heterogeneity.
+
+[Package and article](research.html#gmnl-the-multinomial-logit-model-with-random-parameters)
+:::
+
+::: {.home-card}
+### spldv
+
+R tools for spatial limited dependent variable models and related methods for applied spatial econometrics.
+
+[Software and papers](research.html#r-package)
+:::
+
+:::

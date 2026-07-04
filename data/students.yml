@@ -1,0 +1,155 @@
+- id: "pablo-rodriguez"
+  name: "Pablo Rodriguez"
+  degree_type: "PhD"
+  degree: "PhD in Economics, Universidad de Talca, Talca, Chile"
+  co_advisors: []
+  thesis: "Three Essays in Childhood and Human Capital"
+  year: 2025
+  current_position: "Professor at Universidad Católica del Norte"
+  topics:
+    - "Causal inference"
+    - "Human capital"
+    - "Health economics"
+    - "Latent class"
+  articles:
+    - title: "Instrumental variable estimation with observed and unobserved heterogeneity of the treatment and instrument effect: A latent class approach"
+      url: "https://link.springer.com/article/10.1007/s00181-024-02658-0"
+  links:
+    - text: "Web"
+      url: "https://www.eciem.cl/academico/38/PABLO-RODRGUEZ"
+
+- id: "juan-palomino"
+  name: "Juan Palomino"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors: []
+  thesis: "The monetary subjective health evaluation for commuting long distances in Chile: A latent class analysis"
+  year: 2018
+  current_position: "Professor at Pontifical Catholic University of Peru"
+  topics:
+    - "Discrete choice"
+    - "Latent class"
+    - "Transportation"
+    - "Health economics"
+  articles:
+    - title: "The monetary subjective health evaluation for commuting long distances in Chile: A latent class analysis"
+      url: "https://rsaiconnect.onlinelibrary.wiley.com/doi/abs/10.1111/pirs.12416"
+  links:
+    - text: "Google Scholar"
+      url: "https://scholar.google.com.pe/citations?hl=es&user=Bf6HrLwAAAAJ"
+
+- id: "gustavo-ahumada"
+  name: "Gustavo Ahumada"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors:
+    - "Victor Iturra"
+  thesis: "We do not have the same tastes! Evaluating individual heterogeneity in the preferences for amenities"
+  year: 2018
+  current_position: "Professor at Universidad Católica del Norte"
+  topics:
+    - "Subjective well-being"
+    - "Discrete choice"
+    - "Random parameters"
+    - "Urban amenities"
+  articles:
+    - title: "We do not have the same tastes! Evaluating individual heterogeneity in the preferences for amenities"
+      url: "https://link.springer.com/article/10.1007/s10902-019-00081-2"
+  links:
+    - text: "Web"
+      url: "https://gahumada.weebly.com/research.html"
+
+- id: "anita-molina"
+  name: "Anita Molina"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors: []
+  thesis: "Your Air Pollution Makes Me Sick! Estimating the Spillover Effect of PM2.5 on Emergency Room Visits in Chile"
+  year: 2020
+  current_position: "Professor"
+  topics:
+    - "Spatial econometrics"
+    - "Environmental economics"
+    - "Health economics"
+    - "Air pollution"
+  articles:
+    - title: "Your Air Pollution Makes Me Sick! Estimating the Spillover Effect of PM2.5 on Emergency Room Visits in Chile"
+      url: "https://openjournals.wu.ac.at/ojs/index.php/region/article/view/399"
+  links: []
+
+- id: "diana-romero"
+  name: "Diana Romero"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors: []
+  thesis: "Are preferences for city attributes heterogenous?: An assessment using a discrete choice experiment"
+  year: 2020
+  current_position: "Professor at Universidad de La Costa, Barranquilla, Colombia"
+  topics:
+    - "Discrete choice"
+    - "Urban amenities"
+    - "Subjective well-being"
+  articles:
+    - title: "Are preferences for city attributes heterogenous?: An assessment using a discrete choice experiment"
+      url: "#"
+  links:
+    - text: "ResearchGate"
+      url: "https://www.researchgate.net/profile/Diana-Romero-Espinosa"
+
+- id: "camilo-quinteros"
+  name: "Camilo Quinteros"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors:
+    - "Yasna Cortés"
+  thesis: "Effects of spatial competition on public educational efficiency: An analysis for the Chilean Metropolitan Region"
+  year: 2020
+  current_position: "Research assistant, Universidad Tecnológica de Bolívar"
+  topics:
+    - "Spatial econometrics"
+    - "Education"
+    - "Public efficiency"
+  articles:
+    - title: "Effects of spatial competition on public educational efficiency: An analysis for the Chilean Metropolitan Region"
+      url: "#"
+  links:
+    - text: "Google Scholar"
+      url: "#"
+
+- id: "alejandra-blanco"
+  name: "Alejandra Blanco"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors: []
+  thesis: "Socio-emotional development and body weight in early childhood: Is the weight penalty sensitive to imperfect instruments?"
+  year: 2021
+  current_position: "Research assistant, Universidad Católica del Norte"
+  topics:
+    - "Health economics"
+    - "Child development"
+    - "Causal inference"
+    - "Instrumental variables"
+  articles:
+    - title: "Socio-emotional development and body weight in early childhood: Is the weight penalty sensitive to imperfect instruments?"
+      url: "#"
+  links: []
+
+- id: "cristian-ortiz"
+  name: "Cristian Ortiz"
+  degree_type: "Master"
+  degree: "Master in Applied Economics, mention in Regional Studies, Universidad Católica del Norte, Antofagasta, Chile"
+  co_advisors: []
+  thesis: "Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors: Incorporating both heterogeneous preferences and income endogeneity"
+  year: 2021
+  current_position: "Professor at Universidad Nacional de Loja"
+  topics:
+    - "Discrete choice"
+    - "Environmental economics"
+    - "Endogeneity"
+    - "Heterogeneous preferences"
+  articles:
+    - title: "Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors: Incorporating both heterogeneous preferences and income endogeneity"
+      url: "https://www.sciencedirect.com/science/article/pii/S0301479721021022?dgcid=author"
+  links:
+    - text: "Google Scholar"
+      url: "https://scholar.google.com/citations?hl=es&sortby=pubdate&user=K-G1nncAAAAJ&view_op=list_works"

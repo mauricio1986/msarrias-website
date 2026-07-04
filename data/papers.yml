@@ -1,0 +1,451 @@
+- id: a-j-test-for-spatial-autoregressive-binary-models
+  title: A J-test for spatial autoregressive binary models
+  authors: Gianfranco Piras and Mauricio Sarrias
+  venue: Spatial Statistics
+  status: publication
+  year: 2025
+  description: Article on spatial econometric methods and applications.
+  categories:
+  - Spatial econometrics
+  - Binary response models
+  - Discrete choice
+  - Simulation
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.spasta.2025.100903
+    
+- id: happy-where-you-are-exploring-migration-intentions-and-subjective-well-being-through-a-discrete-choice-experiment
+  title: Happy Where You Are? Exploring Migration Intentions and Subjective Well-being Through a Discrete Choice Experiment
+  authors: Victor Iturra and Mauricio Sarrias
+  venue: Journal of Happiness Studies
+  status: publication
+  year: 2025
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Subjective well-being
+  - Latent class
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1007/s10902-025-00940-1
+    
+- id: instrumental-variable-estimation-with-observed-and-unobserved-heterogeneity-of-the-treatment-and-instrument-effect-a-latent-class-approach
+  title: 'Instrumental variable estimation with observed and unobserved heterogeneity of the treatment and instrument effect: a latent class approach'
+  authors: Pablo Rodriguez and Mauricio Sarrias
+  venue: Empirical Economics
+  status: publication
+  year: 2024
+  description: Article on endogeneity, treatment effects, and heterogeneous responses.
+  categories:
+  - Discrete choice
+  - Causal inference
+  - Latent class
+  links:
+  - text: DOI
+    url: https://doi.org/10.1007/s00181-024-02658-0
+  - text: Code
+    url: https://github.com/mauricio1986/ivhetLc
+    
+- id: amenities-and-individual-heterogeneity-in-the-return-to-schooling
+  title: Amenities and individual heterogeneity in the return to schooling
+  authors: Victor Iturra and Mauricio Sarrias
+  venue: Letters in Spatial and Resource Sciences
+  status: publication
+  year: 2023
+  description: Published article in Letters in Spatial and Resource Sciences.
+  categories:
+  - Discrete choice
+  - Education
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1007/s12076-022-00322-8
+    
+- id: estimating-heteroskedastic-and-instrumental-variable-models-for-binary-outcome-variables-in-r
+  title: Estimating Heteroskedastic and Instrumental Variable Models for Binary Outcome Variables in R
+  authors: Mauricio Sarrias
+  venue: The R Journal
+  status: publication
+  year: 2023
+  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  categories:
+  - Binary response models
+  - Discrete choice
+  - Causal inference
+  - R package
+  links:
+  - text: DOI
+    url: https://doi.org/10.32614/rj-2023-050
+    
+- id: gmm-estimators-for-binary-spatial-models-in-r
+  title: GMM Estimators for Binary Spatial Models in R
+  authors: Gianfranco Piras and Mauricio Sarrias
+  venue: Journal of Statistical Software
+  status: publication
+  year: 2023
+  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  categories:
+  - Spatial econometrics
+  - Binary response models
+  - R package
+  links:
+  - text: DOI
+    url: https://doi.org/10.18637/jss.v107.i08
+    
+- id: heterogeneous-spatial-models-in-r-spatial-regimes-models
+  title: 'Heterogeneous spatial models in R: spatial regimes models'
+  authors: Gianfranco Piras and Mauricio Sarrias
+  venue: Journal of Spatial Econometrics
+  status: publication
+  year: 2023
+  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  categories:
+  - Spatial econometrics
+  - R package
+  links:
+  - text: DOI
+    url: https://doi.org/10.1007/s43071-023-00034-1
+    
+- id: one-or-two-step-evaluating-gmm-efficiency-for-spatial-binary-probit-models
+  title: One or two-step? Evaluating GMM efficiency for spatial binary probit models
+  authors: Gianfranco Piras and Mauricio Sarrias
+  venue: Journal of Choice Modelling
+  status: publication
+  year: 2023
+  description: Article on spatial econometric methods and applications.
+  categories:
+  - Spatial econometrics
+  - Binary response models
+  - Simulation
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jocm.2023.100432
+    
+- id: bodyweight-and-human-capital-development-assessing-the-impact-of-obesity-on-socioemotional-skills-during-childhood-in-chile
+  title: 'Bodyweight and human capital development: Assessing the impact of obesity on socioemotional skills during childhood in Chile'
+  authors: Mauricio Sarrias and Alejandra Blanco
+  venue: Economics & Human Biology
+  status: publication
+  year: 2022
+  description: Article on health, human capital, and applied econometric analysis.
+  categories:
+  - Causal inference
+  - Health economics
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.ehb.2022.101190
+    
+- id: estimating-the-non-pecuniary-benefit-of-engaging-in-pro-environmental-behaviors-incorporating-both-heterogeneous-preferences-and-income-endogeneity
+  title: 'Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors: Incorporating both heterogeneous preferences and income endogeneity'
+  authors: Cristian Ortiz and Mauricio Sarrias
+  venue: Journal of Environmental Management
+  status: publication
+  year: 2022
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Causal inference
+  - Environmental economics
+  - Latent class
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jenvman.2021.114040
+    
+- id: the-impact-of-bodyweight-on-life-satisfaction-among-school-aged-children-are-the-mechanisms-gender-based
+  title: 'The Impact of Bodyweight on Life Satisfaction among School-Aged Children: Are the Mechanisms Gender-Based?'
+  authors: Victor Iturra and Mauricio Sarrias
+  venue: Child Indicators Research
+  status: publication
+  year: 2022
+  description: Article on subjective well-being and applied microeconometric analysis.
+  categories:
+  - Causal inference
+  - Subjective well-being
+  - Health economics
+  links:
+  - text: DOI
+    url: https://doi.org/10.1007/s12187-022-09973-x
+    
+- id: valuing-urban-drinking-water-supply-attributes-a-case-study-from-chile
+  title: 'Valuing urban drinking water supply attributes: A case study from Chile'
+  authors: Cristian González-Santander and Mauricio Sarrias and Ricardo A. Daziano and Lisandro Roco
+  venue: Water Resources and Economics
+  status: publication
+  year: 2022
+  description: Published article in Water Resources and Economics.
+  categories:
+  - Discrete choice
+  - Environmental economics
+  - Mixed logit
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.wre.2022.100204
+    
+- id: your-air-pollution-makes-me-sick-estimating-the-spatial-spillover-effects-of-pm2-5-emissions-on-emergency-room-visits-in-chile
+  title: Your Air Pollution Makes Me Sick! Estimating the Spatial Spillover Effects of PM2.5 Emissions on Emergency Room Visits in Chile
+  authors: Mauricio Sarrias and Anita Molina-Varas
+  venue: REGION
+  status: publication
+  year: 2022
+  description: Article on spatial econometric methods and applications.
+  categories:
+  - Spatial econometrics
+  - Health economics
+  - Environmental economics
+  links:
+  - text: DOI
+    url: https://doi.org/10.18335/region.v9i2.399
+    
+- id: a-two-recursive-equation-model-to-correct-for-endogeneity-in-latent-class-binary-probit-models
+  title: A two recursive equation model to correct for endogeneity in latent class binary probit models
+  authors: Mauricio Sarrias
+  venue: Journal of Choice Modelling
+  status: publication
+  year: 2021
+  description: Article on endogeneity, treatment effects, and heterogeneous responses.
+  categories:
+  - Discrete choice
+  - Binary response models
+  - Causal inference
+  - Latent class
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jocm.2021.100301
+    
+- id: the-double-burden-of-being-a-woman-and-obese-evidence-from-the-chilean-labor-market
+  title: "The Double Burden of Being A Woman and Obese: Evidence from the Chilean Labor Market"
+  authors: Mauricio Sarrias and Victor Iturra
+  venue: Feminist Economics
+  status: publication
+  year: 2021
+  description: Article on obesity and labor market.
+  categories:
+  - Health economics
+  links:
+  - text: DOI
+    url: https://doi.org/10.1080/13545701.2021.1988127
+    
+- id: are-preferences-for-city-attributes-heterogeneous-an-assessment-using-a-discrete-choice-experiment
+  title: Are preferences for city attributes heterogeneous? An assessment using a discrete choice experiment
+  authors: Diana Romero-Espinosa and Mauricio Sarrias and Ricardo Daziano
+  venue: Papers in Regional Science
+  status: publication
+  year: 2021
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Mixed logit
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1111/pirs.12566
+    
+- id: effects-of-spatial-competition-on-public-educational-efficiency-an-analysis-for-the-chilean-metropolitan-region
+  title: 'Effects of spatial competition on public educational efficiency: an analysis for the Chilean Metropolitan Region'
+  authors: Camilo Quintero-Fragozo and Yasna Cortés and Mauricio Sarrias
+  venue: Journal of Education Policy
+  status: publication
+  year: 2021
+  description: Article on spatial econometric methods and applications.
+  categories:
+  - Spatial econometrics
+  - Causal inference
+  - Education
+  - Regional economics
+  links:
+  - text: DOI
+    url: https://doi.org/10.1080/02680939.2021.1966102
+    
+- id: individual-specific-posterior-distributions-from-mixed-logit-models-properties-limitations-and-diagnostic-checks
+  title: 'Individual-specific posterior distributions from Mixed Logit models: Properties, limitations and diagnostic checks'
+  authors: Mauricio Sarrias
+  venue: Journal of Choice Modelling
+  status: publication
+  year: 2020
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Simulation
+  - Mixed logit
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jocm.2020.100224
+    
+- id: random-parameters-and-spatial-heterogeneity-using-rchoice-in-r
+  title: Random Parameters and Spatial Heterogeneity using Rchoice in R
+  authors: Mauricio Sarrias
+  venue: REGION
+  status: publication
+  year: 2020
+  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  categories:
+  - Spatial econometrics
+  - Discrete choice
+  - R package
+  - Mixed logit
+  links:
+  - text: DOI
+    url: https://doi.org/10.18335/region.v7i1.279
+    
+- id: how-much-should-we-pay-for-mental-health-deterioration-the-subjective-monetary-value-of-mental-health-after-the-27f-chilean-earthquake
+  title: How Much Should We Pay for Mental Health Deterioration? The Subjective Monetary Value of Mental Health After the 27F Chilean Earthquake
+  authors: Mauricio Sarrias and Benjamin Jara
+  venue: Journal of Happiness Studies
+  status: publication
+  year: 2019
+  description: Article on health, human capital, and applied econometric analysis.
+  categories:
+  - Subjective well-being
+  - Health economics
+  links:
+  - text: DOI
+    url: https://doi.org/10.1007/s10902-019-00112-y
+  - text: Code
+    url: https://data.mendeley.com/datasets/4d7mm7rk2n/1
+    
+- id: the-monetary-subjective-health-evaluation-for-commuting-long-distances-in-chile-a-latent-class-analysis
+  title: 'The monetary subjective health evaluation for commuting long distances in Chile: A latent class analysis'
+  authors: J. Palomino and M. Sarrias
+  venue: Papers in Regional Science
+  status: publication
+  year: 2019
+  description: Article on health, human capital, and applied econometric analysis.
+  categories:
+  - Discrete choice
+  - Latent class
+  - Subjective well-being
+  - Health economics
+  - Transportation
+  - Random parameters
+  
+- id: we-do-not-have-the-same-tastes-evaluating-individual-heterogeneity-in-the-preferences-for-amenities
+  title: We Do Not Have the Same Tastes! Evaluating Individual Heterogeneity in the Preferences for Amenities
+  authors: G. Ahumada and V. Iturra and M. Sarrias
+  venue: Journal of Happiness Studies
+  status: publication
+  year: 2019
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Regional economics
+  - Random parameters
+  - Mixed logit
+  
+- id: do-monetary-subjective-well-being-evaluations-vary-across-space-comparing-continuous-and-discrete-spatial-heterogeneity
+  title: Do monetary subjective well-being evaluations vary across space? Comparing continuous and discrete spatial heterogeneity
+  authors: Mauricio Sarrias
+  venue: Spatial Economic Analysis
+  status: publication
+  year: 2018
+  description: Article on spatial econometric methods and applications.
+  categories:
+  - Spatial econometrics
+  - Subjective well-being
+  - Random parameters
+  - Mixed logit
+  - Latent class
+  links:
+  - text: DOI
+    url: https://doi.org/10.1080/17421772.2018.1485968
+    
+- id: individual-specific-point-and-interval-conditional-estimates-of-latent-class-logit-parameters
+  title: Individual-specific point and interval conditional estimates of latent class logit parameters
+  authors: Mauricio Sarrias and Ricardo A. Daziano
+  venue: Journal of Choice Modelling
+  status: publication
+  year: 2018
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Latent class
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jocm.2017.10.004
+    
+- id: regional-concentration-and-national-economic-growth-in-brazil-and-chile
+  title: Regional concentration and national economic growth in Brazil and Chile
+  authors: P. Aroca and C. Azzoni and M. Sarrias
+  venue: Letters in Spatial and Resource Sciences
+  status: publication
+  year: 2018
+  description: Published article in Letters in Spatial and Resource Sciences.
+  categories:
+  - Regional economics
+  
+- id: are-consumers-willing-to-pay-to-let-cars-drive-for-them-analyzing-response-to-autonomous-vehicles
+  title: Are consumers willing to pay to let cars drive for them? Analyzing response to autonomous vehicles
+  authors: Ricardo A. Daziano and Mauricio Sarrias and Benjamin Leard
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  status: publication
+  year: 2017
+  description: Article on preference heterogeneity and discrete choice modeling.
+  categories:
+  - Discrete choice
+  - Transportation
+  - Random parameters
+  - Mixed logit
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.trc.2017.03.003
+- id: convergence-to-the-managerial-frontier
+  title: Convergence to the managerial frontier
+  authors: William F. Maloney and Mauricio Sarrias
+  venue: Journal of Economic Behavior & Organization
+  status: publication
+  year: 2017
+  description: Published article in Journal of Economic Behavior & Organization.
+  categories:
+  - Applied microeconometrics
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jebo.2017.01.002
+    
+- id: multinomial-logit-models-with-continuous-and-discrete-individual-heterogeneity-in-r-the-gmnl-package
+  title: 'Multinomial Logit Models with Continuous and Discrete Individual Heterogeneity in R: The gmnl Package'
+  authors: Mauricio Sarrias and Ricardo Daziano
+  venue: Journal of Statistical Software
+  status: publication
+  year: 2017
+  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  categories:
+  - Discrete choice
+  - R package
+  - Mixed logit
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.18637/jss.v079.i02
+    
+- id: discrete-choice-models-with-random-parameters-in-r-the-rchoice-package
+  title: 'Discrete Choice Models with Random Parameters in R: The Rchoice Package'
+  authors: Mauricio Sarrias
+  venue: Journal of Statistical Software
+  status: publication
+  year: 2016
+  description: Software-oriented article on methods and implementation for applied econometric analysis.
+  categories:
+  - Discrete choice
+  - R package
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.18637/jss.v074.i10
+    
+- id: heterogeneity-in-subjective-wellbeing-an-application-to-occupational-allocation-in-africa
+  title: 'Heterogeneity in subjective wellbeing: An application to occupational allocation in Africa'
+  authors: Paolo Falco and William F. Maloney and Bob Rijkers and Mauricio Sarrias
+  venue: Journal of Economic Behavior & Organization
+  status: publication
+  year: 2015
+  description: Article on subjective well-being and applied microeconometric analysis.
+  categories:
+  - Subjective well-being
+  - Discrete choice
+  - Random parameters
+  links:
+  - text: DOI
+    url: https://doi.org/10.1016/j.jebo.2014.12.022

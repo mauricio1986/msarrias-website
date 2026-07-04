@@ -1,0 +1,384 @@
+/* css styles */
+
+.paper-card {
+  border-left: 4px solid #555;
+  padding: 1.1rem 1.3rem;
+  margin: 1.5rem 0;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.paper-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  margin: 0.15rem 0.1rem 0.25rem 0;
+  font-size: 0.78rem;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #333;
+}
+
+.paper-card a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.paper-card a:hover {
+  text-decoration: underline;
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.8fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-photo {
+  text-align: center;
+}
+
+.hero-photo img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 5%;
+  border: 4px solid #eeeeee;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.hero-buttons {
+  margin-top: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+.button.primary {
+  background: #222;
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: #444;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-photo img {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+
+/* Software page ---------------------------------------------------------- */
+
+.software-hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.4rem 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+  background: #f8f8f8;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.software-hero-text {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.software-hero-links {
+  text-align: right;
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.software-card {
+  padding: 1.2rem 1.3rem;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-left: 4px solid #555;
+  border-radius: 8px;
+}
+
+.software-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.software-links {
+  margin: 0.8rem 0;
+  font-weight: 500;
+}
+
+.software-links a {
+  text-decoration: none;
+}
+
+.software-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .software-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .software-hero-links {
+    text-align: left;
+  }
+
+  .software-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Students & alumni page */
+
+.student-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.student-stat {
+  padding: 1rem;
+  background: #f8f8f8;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.student-stat strong {
+  font-size: 2rem;
+  display: block;
+  line-height: 1.1;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+  margin: 1.2rem 0 2rem 0;
+}
+
+.student-card {
+  padding: 1.2rem 1.3rem;
+  border-left: 4px solid #555;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.student-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.student-meta {
+  color: #555;
+  font-size: 0.92rem;
+  margin-bottom: 0.25rem;
+}
+
+.student-thesis {
+  margin-top: 0.9rem;
+}
+
+.student-articles {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.student-articles ul {
+  margin-top: 0.25rem;
+  padding-left: 1.2rem;
+}
+
+.student-links {
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.student-links a {
+  text-decoration: none;
+}
+
+.student-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .student-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Teaching page */
+
+.teaching-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.teaching-stat {
+  padding: 1rem;
+  background: #f8f8f8;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.teaching-stat strong {
+  font-size: 2rem;
+  display: block;
+  line-height: 1.1;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+  margin: 1.2rem 0 2rem 0;
+}
+
+.course-card {
+  padding: 1.2rem 1.3rem;
+  border-left: 4px solid #555;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.course-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.course-card h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.course-meta {
+  color: #555;
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.course-period {
+  font-size: 0.85rem;
+  color: #555;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+}
+
+.course-software {
+  margin-bottom: 0.45rem;
+}
+
+.resource-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.resource-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 999px;
+  background: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.resource-pill:hover {
+  background: #f0f0f0;
+  text-decoration: none;
+}
+
+.resource-icon {
+  font-size: 0.95rem;
+}
+
+.muted {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .teaching-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card-header {
+    flex-direction: column;
+  }
+
+  .course-period {
+    white-space: normal;
+  }
+}

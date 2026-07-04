@@ -1,0 +1,212 @@
+---
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+  freeze: false
+---
+
+```{r}
+library(yaml)
+library(htmltools)
+
+courses <- yaml::read_yaml("data/courses.yml")
+
+esc <- function(x) htmltools::htmlEscape(as.character(x))
+
+get_value <- function(x, name, default = "") {
+  if (!is.null(x[[name]])) x[[name]] else default
+}
+
+slugify <- function(x) {
+  x <- tolower(x)
+  x <- gsub("[^a-z0-9]+", "-", x)
+  x <- gsub("^-|-$", "", x)
+  x
+}
+
+make_tags <- function(topics) {
+  if (length(topics) == 0) return("")
+  paste0(
+    vapply(
+      topics,
+      function(topic) {
+        paste0('<a class="tag" href="#', slugify(topic), '">', esc(topic), '</a>')
+      },
+      character(1)
+    ),
+    collapse = "\n"
+  )
+}
+
+resource_icon <- function(type) {
+  switch(
+    type,
+    "Syllabus" = "📄",
+    "Slides" = "🖥️",
+    "Video" = "▶️",
+    "Book" = "📘",
+    "Lab" = "🧪",
+    "Homework" = "✏️",
+    "Exam" = "📝",
+    "Code/Data" = "💻",
+    "Workshop" = "🎤",
+    "🔗"
+  )
+}
+
+make_resources <- function(resources) {
+  if (length(resources) == 0) {
+    return('<p class="muted">Materials will be added later.</p>')
+  }
+
+  items <- vapply(
+    resources,
+    function(r) {
+      type <- get_value(r, "type", "Link")
+      paste0(
+        '<a class="resource-pill" href="', esc(get_value(r, "url", "#")), '">',
+        '<span class="resource-icon">', resource_icon(type), '</span>',
+        esc(get_value(r, "text")),
+        '</a>'
+      )
+    },
+    character(1)
+  )
+
+  paste0('<div class="resource-list">', paste(items, collapse = "\n"), '</div>')
+}
+
+make_software <- function(software) {
+  if (length(software) == 0) return("")
+  paste0(
+    '<p class="course-software"><strong>Software:</strong> ',
+    esc(paste(software, collapse = ", ")),
+    '</p>'
+  )
+}
+
+make_card <- function(course) {
+  paste0(
+    '<div class="course-card" id="', esc(get_value(course, "id")), '">\n',
+    '<div class="course-card-header">\n',
+    '<div>\n',
+    '<h3>', esc(get_value(course, "title")), '</h3>\n',
+    '<p class="course-meta">', esc(get_value(course, "level")), ' · ', esc(get_value(course, "institution")), '</p>\n',
+    '</div>\n',
+    '<div class="course-period">', esc(get_value(course, "period")), '</div>\n',
+    '</div>\n',
+    '<p>', esc(get_value(course, "summary")), '</p>\n',
+    make_software(get_value(course, "software", list())), '\n',
+    make_tags(get_value(course, "topics", list())), '\n',
+    '<h4>Materials</h4>\n',
+    make_resources(get_value(course, "resources", list())), '\n',
+    '</div>\n'
+  )
+}
+
+courses <- courses[order(match(vapply(courses, function(x) get_value(x, "level"), character(1)),
+                             c("Graduate", "Undergraduate", "Workshop")),
+                         vapply(courses, function(x) get_value(x, "title"), character(1)))]
+
+all_topics <- sort(unique(unlist(lapply(courses, function(c) get_value(c, "topics", list())))))
+
+n_courses <- length(courses)
+n_graduate <- sum(vapply(courses, function(c) get_value(c, "level") == "Graduate", logical(1)))
+n_workshops <- sum(vapply(courses, function(c) get_value(c, "level") == "Workshop", logical(1)))
+```
+
+# Teaching
+
+I teach courses in econometrics, spatial econometrics, discrete choice models, microeconomics, and computational methods for applied economic research. Most of my teaching materials emphasize the connection between econometric theory, empirical applications, and implementation in R.
+
+::: {.teaching-summary}
+::: {.teaching-stat}
+**`r n_courses`**  
+Courses and workshops
+:::
+
+::: {.teaching-stat}
+**`r n_graduate`**  
+Graduate courses
+:::
+
+::: {.teaching-stat}
+**`r n_workshops`**  
+Workshops
+:::
+:::
+
+## Topics {#topics}
+
+```{r}
+#| results: asis
+
+for (topic in all_topics) {
+  cat('<a class="tag" href="#', slugify(topic), '">', esc(topic), '</a>\n', sep = "")
+}
+```
+
+---
+
+## Graduate courses {#graduate-courses}
+
+```{r}
+#| results: asis
+
+selected <- courses[vapply(courses, function(c) get_value(c, "level") == "Graduate", logical(1))]
+
+cat('<div class="course-grid">\n')
+for (course in selected) cat(make_card(course))
+cat('</div>\n')
+```
+
+## Undergraduate courses {#undergraduate-courses}
+
+```{r}
+#| results: asis
+
+selected <- courses[vapply(courses, function(c) get_value(c, "level") == "Undergraduate", logical(1))]
+
+cat('<div class="course-grid">\n')
+for (course in selected) cat(make_card(course))
+cat('</div>\n')
+```
+
+## Workshops {#workshops}
+
+```{r}
+#| results: asis
+
+selected <- courses[vapply(courses, function(c) get_value(c, "level") == "Workshop", logical(1))]
+
+cat('<div class="course-grid">\n')
+for (course in selected) cat(make_card(course))
+cat('</div>\n')
+```
+
+---
+
+## Courses by topic {#courses-by-topic}
+
+```{r}
+#| results: asis
+
+for (topic in all_topics) {
+  cat("\n\n### ", esc(topic), " {#", slugify(topic), "}\n\n", sep = "")
+
+  selected <- courses[vapply(
+    courses,
+    function(c) topic %in% get_value(c, "topics", list()),
+    logical(1)
+  )]
+
+  for (course in selected) {
+    cat("- [", esc(get_value(course, "title")), "](#", esc(get_value(course, "id")), ")",
+        " — ", esc(get_value(course, "summary")), "\n", sep = "")
+  }
+
+  cat("\n[Back to topics](#topics)\n")
+}
+```
