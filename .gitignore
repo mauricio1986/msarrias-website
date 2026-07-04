@@ -3,6 +3,7 @@
 .RData
 .DS_Store
 .quarto
-_site
 
 
+/.quarto/
+**/*.quarto_ipynb
