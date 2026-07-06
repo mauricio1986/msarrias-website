@@ -104,7 +104,6 @@ I am a regional scientist (pseudo economist) working on **spatial econometrics**
 <div class="hero-buttons">
 <a class="button button-primary" href="research.html">Research</a>
 <a class="button button-secondary" href="files/cv/MS_cv_v11_en.pdf">Download CV</a>
-<a class="button button-secondary" href="contact.html">Contact</a>
 </div>
 
 :::
@@ -119,7 +118,7 @@ I am a regional scientist (pseudo economist) working on **spatial econometrics**
 
 <a class="tag" href="research.html#spatial-econometrics">Spatial econometrics</a>
 <a class="tag" href="research.html#discrete-choice">Discrete choice</a>
-<a class="tag" href="research.html#binary-response-models">Binary response models</a>
+<a class="tag" href="research.html#random-parameters">Random parameters</a>
 <a class="tag" href="research.html#causal-inference">Causal inference</a>
 <a class="tag" href="research.html#r-package">R packages</a>
 <a class="tag" href="research.html#simulation">Simulation</a>

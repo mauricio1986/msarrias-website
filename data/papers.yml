@@ -25,6 +25,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4409902148
     openalex_url: https://openalex.org/W4409902148
+    
 - id: happy-where-you-are-exploring-migration-intentions-and-subjective-well-being-through-a-discrete-choice-experiment
   title: Happy Where You Are? Exploring Migration Intentions and Subjective Well-being
     Through a Discrete Choice Experiment
@@ -53,6 +54,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4412615249
     openalex_url: https://openalex.org/W4412615249
+    
 - id: instrumental-variable-estimation-with-observed-and-unobserved-heterogeneity-of-the-treatment-and-instrument-effect-a-latent-class-approach
   title: 'Instrumental variable estimation with observed and unobserved heterogeneity
     of the treatment and instrument effect: a latent class approach'
@@ -82,6 +84,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4402122984
     openalex_url: https://openalex.org/W4402122984
+    
 - id: amenities-and-individual-heterogeneity-in-the-return-to-schooling
   title: Amenities and individual heterogeneity in the return to schooling
   authors: Victor Iturra and Mauricio Sarrias
@@ -94,6 +97,7 @@
   - Discrete choice
   - Education
   - Random parameters
+  - Amenities
   links:
   - text: DOI
     url: https://doi.org/10.1007/s12076-022-00322-8
@@ -108,6 +112,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4317895872
     openalex_url: https://openalex.org/W4317895872
+    
 - id: estimating-heteroskedastic-and-instrumental-variable-models-for-binary-outcome-variables-in-r
   title: Estimating Heteroskedastic and Instrumental Variable Models for Binary Outcome
     Variables in R
@@ -136,6 +141,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4388616705
     openalex_url: https://openalex.org/W4388616705
+    
 - id: gmm-estimators-for-binary-spatial-models-in-r
   title: GMM Estimators for Binary Spatial Models in R
   authors: Gianfranco Piras and Mauricio Sarrias
@@ -147,6 +153,7 @@
   categories:
   - Spatial econometrics
   - Binary response models
+  - Discrete choice models
   - R package
   links:
   - text: DOI
@@ -162,6 +169,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4387585929
     openalex_url: https://openalex.org/W4387585929
+    
 - id: heterogeneous-spatial-models-in-r-spatial-regimes-models
   title: 'Heterogeneous spatial models in R: spatial regimes models'
   authors: Gianfranco Piras and Mauricio Sarrias
@@ -173,6 +181,7 @@
   categories:
   - Spatial econometrics
   - R package
+  - Random parameters
   links:
   - text: DOI
     url: https://doi.org/10.1007/s43071-023-00034-1
@@ -187,6 +196,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4385073382
     openalex_url: https://openalex.org/W4385073382
+    
 - id: one-or-two-step-evaluating-gmm-efficiency-for-spatial-binary-probit-models
   title: One or two-step? Evaluating GMM efficiency for spatial binary probit models
   authors: Gianfranco Piras and Mauricio Sarrias
@@ -213,6 +223,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4384435919
     openalex_url: https://openalex.org/W4384435919
+    
 - id: bodyweight-and-human-capital-development-assessing-the-impact-of-obesity-on-socioemotional-skills-during-childhood-in-chile
   title: 'Bodyweight and human capital development: Assessing the impact of obesity
     on socioemotional skills during childhood in Chile'
@@ -239,6 +250,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4306711206
     openalex_url: https://openalex.org/W4306711206
+    
 - id: estimating-the-non-pecuniary-benefit-of-engaging-in-pro-environmental-behaviors-incorporating-both-heterogeneous-preferences-and-income-endogeneity
   title: 'Estimating the non-pecuniary benefit of engaging in pro-environmental behaviors:
     Incorporating both heterogeneous preferences and income endogeneity'
@@ -253,6 +265,7 @@
   - Causal inference
   - Environmental economics
   - Latent class
+  - Random parameters
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jenvman.2021.114040
@@ -267,6 +280,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3214321017
     openalex_url: https://openalex.org/W3214321017
+    
 - id: the-impact-of-bodyweight-on-life-satisfaction-among-school-aged-children-are-the-mechanisms-gender-based
   title: 'The Impact of Bodyweight on Life Satisfaction among School-Aged Children:
     Are the Mechanisms Gender-Based?'
@@ -294,6 +308,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4308565078
     openalex_url: https://openalex.org/W4308565078
+    
 - id: valuing-urban-drinking-water-supply-attributes-a-case-study-from-chile
   title: 'Valuing urban drinking water supply attributes: A case study from Chile'
   authors: Cristian González-Santander and Mauricio Sarrias and Ricardo A. Daziano
@@ -322,6 +337,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4281695812
     openalex_url: https://openalex.org/W4281695812
+    
 - id: your-air-pollution-makes-me-sick-estimating-the-spatial-spillover-effects-of-pm2-5-emissions-on-emergency-room-visits-in-chile
   title: Your Air Pollution Makes Me Sick! Estimating the Spatial Spillover Effects
     of PM2.5 Emissions on Emergency Room Visits in Chile
@@ -349,6 +365,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W4283830339
     openalex_url: https://openalex.org/W4283830339
+    
 - id: a-two-recursive-equation-model-to-correct-for-endogeneity-in-latent-class-binary-probit-models
   title: A two recursive equation model to correct for endogeneity in latent class
     binary probit models
@@ -363,6 +380,7 @@
   - Binary response models
   - Causal inference
   - Latent class
+  - Random parameters
   links:
   - text: DOI
     url: https://doi.org/10.1016/j.jocm.2021.100301
@@ -377,6 +395,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3175325998
     openalex_url: https://openalex.org/W3175325998
+    
 - id: the-double-burden-of-being-a-woman-and-obese-evidence-from-the-chilean-labor-market
   title: 'The Double Burden of Being A Woman and Obese: Evidence from the Chilean
     Labor Market'
@@ -401,6 +420,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3217481485
     openalex_url: https://openalex.org/W3217481485
+    
 - id: are-preferences-for-city-attributes-heterogeneous-an-assessment-using-a-discrete-choice-experiment
   title: Are preferences for city attributes heterogeneous? An assessment using a
     discrete choice experiment
@@ -414,6 +434,7 @@
   - Discrete choice
   - Mixed logit
   - Random parameters
+  - Amenities
   links:
   - text: DOI
     url: https://doi.org/10.1111/pirs.12566
@@ -428,6 +449,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3047482119
     openalex_url: https://openalex.org/W3047482119
+    
 - id: effects-of-spatial-competition-on-public-educational-efficiency-an-analysis-for-the-chilean-metropolitan-region
   title: 'Effects of spatial competition on public educational efficiency: an analysis
     for the Chilean Metropolitan Region'
@@ -438,7 +460,6 @@
   description: Analyzes how spatial competition among municipalities affects public
     educational efficiency in the Chilean Metropolitan Region.
   categories:
-  - Spatial econometrics
   - Causal inference
   - Education
   - Regional economics
@@ -456,6 +477,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3197384948
     openalex_url: https://openalex.org/W3197384948
+    
 - id: individual-specific-posterior-distributions-from-mixed-logit-models-properties-limitations-and-diagnostic-checks
   title: 'Individual-specific posterior distributions from Mixed Logit models: Properties,
     limitations and diagnostic checks'
@@ -484,6 +506,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3037503061
     openalex_url: https://openalex.org/W3037503061
+    
 - id: random-parameters-and-spatial-heterogeneity-using-rchoice-in-r
   title: Random Parameters and Spatial Heterogeneity using Rchoice in R
   authors: Mauricio Sarrias
@@ -497,6 +520,7 @@
   - Discrete choice
   - R package
   - Mixed logit
+  - Random parameters
   links:
   - text: DOI
     url: https://doi.org/10.18335/region.v7i1.279
@@ -511,6 +535,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3012192580
     openalex_url: https://openalex.org/W3012192580
+    
 - id: how-much-should-we-pay-for-mental-health-deterioration-the-subjective-monetary-value-of-mental-health-after-the-27f-chilean-earthquake
   title: How Much Should We Pay for Mental Health Deterioration? The Subjective Monetary
     Value of Mental Health After the 27F Chilean Earthquake
@@ -539,6 +564,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2934266999
     openalex_url: https://openalex.org/W2934266999
+    
 - id: the-monetary-subjective-health-evaluation-for-commuting-long-distances-in-chile-a-latent-class-analysis
   title: 'The monetary subjective health evaluation for commuting long distances in
     Chile: A latent class analysis'
@@ -569,6 +595,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2909367112
     openalex_url: https://openalex.org/W2909367112
+    
 - id: we-do-not-have-the-same-tastes-evaluating-individual-heterogeneity-in-the-preferences-for-amenities
   title: We Do Not Have the Same Tastes! Evaluating Individual Heterogeneity in the
     Preferences for Amenities
@@ -583,6 +610,7 @@
   - Regional economics
   - Random parameters
   - Mixed logit
+  - Amenities
   links:
   - text: DOI
     url: https://link.springer.com/article/10.1007/s10902-019-00081-2
@@ -597,6 +625,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2913381744
     openalex_url: https://openalex.org/W2913381744
+    
 - id: do-monetary-subjective-well-being-evaluations-vary-across-space-comparing-continuous-and-discrete-spatial-heterogeneity
   title: Do monetary subjective well-being evaluations vary across space? Comparing
     continuous and discrete spatial heterogeneity
@@ -626,6 +655,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2884055031
     openalex_url: https://openalex.org/W2884055031
+    
 - id: individual-specific-point-and-interval-conditional-estimates-of-latent-class-logit-parameters
   title: Individual-specific point and interval conditional estimates of latent class
     logit parameters
@@ -653,6 +683,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2766431333
     openalex_url: https://openalex.org/W2766431333
+    
 - id: regional-concentration-and-national-economic-growth-in-brazil-and-chile
   title: Regional concentration and national economic growth in Brazil and Chile
   authors: P. Aroca and C. Azzoni and M. Sarrias
@@ -676,6 +707,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2889160826
     openalex_url: https://openalex.org/W2889160826
+    
 - id: are-consumers-willing-to-pay-to-let-cars-drive-for-them-analyzing-response-to-autonomous-vehicles
   title: Are consumers willing to pay to let cars drive for them? Analyzing response
     to autonomous vehicles
@@ -704,6 +736,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2543298339
     openalex_url: https://openalex.org/W2543298339
+    
 - id: convergence-to-the-managerial-frontier
   title: Convergence to the managerial frontier
   authors: William F. Maloney and Mauricio Sarrias
@@ -727,6 +760,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W3021215711
     openalex_url: https://openalex.org/W3021215711
+    
 - id: multinomial-logit-models-with-continuous-and-discrete-individual-heterogeneity-in-r-the-gmnl-package
   title: 'Multinomial Logit Models with Continuous and Discrete Individual Heterogeneity
     in R: The gmnl Package'
@@ -755,6 +789,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2734890889
     openalex_url: https://openalex.org/W2734890889
+    
 - id: discrete-choice-models-with-random-parameters-in-r-the-rchoice-package
   title: 'Discrete Choice Models with Random Parameters in R: The Rchoice Package'
   authors: Mauricio Sarrias
@@ -781,6 +816,7 @@
     metrics_year: 2026
     openalex_id: https://openalex.org/W2532563432
     openalex_url: https://openalex.org/W2532563432
+    
 - id: heterogeneity-in-subjective-wellbeing-an-application-to-occupational-allocation-in-africa
   title: 'Heterogeneity in subjective wellbeing: An application to occupational allocation
     in Africa'

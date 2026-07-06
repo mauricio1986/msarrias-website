@@ -29,6 +29,7 @@ My software is designed to make advanced econometric models usable for applied r
 <span class="tag">Mixed logit</span>
 <span class="tag">Latent class</span>
 <span class="tag">Random parameters</span>
+<span class="tag">Conditional logit</span>
 
 `gmnl` estimates multinomial logit models with observed and unobserved preference heterogeneity. It includes mixed multinomial logit, generalized multinomial logit, latent class, and mixed-mixed logit models.
 
@@ -53,6 +54,7 @@ install.packages("gmnl")
 <span class="tag">Random parameters</span>
 <span class="tag">Binary models</span>
 <span class="tag">Ordered models</span>
+<span class="tag">Count models</span>
 
 `Rchoice` estimates binary, ordered, and count models with random parameters using simulated maximum likelihood for cross-sectional and longitudinal data.
 
@@ -77,6 +79,7 @@ install.packages("Rchoice")
 <span class="tag">Binary response models</span>
 <span class="tag">GMM</span>
 <span class="tag">Marginal effects</span>
+<span class="tag">Maximum likelihood</span>
 
 `spldv` estimates spatial limited dependent variable models, especially spatial autoregressive models for binary outcomes using GMM estimators.
 
